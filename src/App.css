@@ -1,38 +1,56 @@
-.App {
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.MuiContainer-root {
+  background: transparent !important;
+}
+
+.section, .section:nth-of-type(even) {
+  background: transparent !important;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
   text-align: center;
+  font-family: 'Orbitron', 'Audiowide', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card, .MuiPaper-root {
+  border-radius: 18px !important;
+  transition: box-shadow 0.3s, border 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card:hover, .MuiPaper-root:hover {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.MuiButton-root {
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  border-radius: 8px !important;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+}
+
+/* Navbar offset for fixed position */
+@media (max-width: 600px) {
+  .section {
+    padding: 48px 0 32px 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .section-title {
+    font-size: 2rem;
   }
 }
