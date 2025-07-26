@@ -1,9 +1,8 @@
 import React from 'react';
-import { Box, Typography, Paper, Stack, Link, useTheme, Grid, Card, CardContent, IconButton } from '@mui/material';
+import { Box, Typography, Stack, Link, useTheme, Grid, Card, CardContent, IconButton } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 

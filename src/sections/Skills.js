@@ -1,8 +1,7 @@
 import React from 'react';
-import { Box, Typography, Grid, Paper, List, ListItem, ListItemText, Card, CardContent, useTheme } from '@mui/material';
+import { Box, Typography, Grid, Paper, Card, CardContent, useTheme } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import CssIcon from '@mui/icons-material/Css';
-import StorageIcon from '@mui/icons-material/Storage';
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import ReactIcon from '@mui/icons-material/Tag';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -10,7 +9,6 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import FunctionsIcon from '@mui/icons-material/Functions';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import CloudIcon from '@mui/icons-material/Cloud';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 const techSkills = [
   { label: 'Python', icon: <FunctionsIcon sx={{ fontSize: 48, color: '#00fff7' }} /> },
